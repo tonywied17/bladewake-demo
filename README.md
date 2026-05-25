@@ -2,7 +2,7 @@
 
 <img src="assets/bladewake_icon.svg" alt="Bladewake" width="180" />
 
-# Bladewake — Early Access Test Builds
+# Bladewake - Early Access Test Builds
 
 **Fast-paced, neon-soaked sword arena combat.**
 Public testing channel for pre-release Windows builds.
@@ -23,16 +23,16 @@ Grab the latest zipped build from the **[Releases page](https://github.com/tonyw
 2. Extract anywhere (e.g. `C:\Games\Bladewake`)
 3. Run `Bladewake.exe`
 
-> **Windows 10/11 64-bit only.** Builds are unsigned — SmartScreen may warn the first time. Click **More info → Run anyway**.
+> **Windows 10/11 64-bit only.** Builds are unsigned - SmartScreen may warn the first time. Click **More info → Run anyway**.
 
 ## 🎮 What is Bladewake?
 
 A first-person / third-person arena fighter built in Godot 4.6, focused on:
 
-- **Trail-based blade combat** — every swing leaves a wake that reads as both flourish and threat range
-- **Skill-floor friendly, ceiling-deep** — light/heavy/parry/dash, no combo trees to memorize
-- **Built for short sessions** — matches resolve in minutes, not hours
-- **Online + local play** — Nakama-backed matchmaking, plus practice arenas
+- **Trail-based blade combat** - every swing leaves a wake that reads as both flourish and threat range
+- **Skill-floor friendly, ceiling-deep** - light/heavy/parry/dash, no combo trees to memorize
+- **Built for short sessions** - matches resolve in minutes, not hours
+- **Online + local play** - Nakama-backed matchmaking, plus practice arenas
 
 This is an **early access tester drop**. Expect rough edges; bring opinions.
 
@@ -54,7 +54,7 @@ The current build is focused on **core combat feel** and **arena flow**. Please 
 - [ ] Lock-on (if available)
 
 ### Arenas
-- [ ] Each arena layout — sightlines, choke points, fall hazards
+- [ ] Each arena layout - sightlines, choke points, fall hazards
 - [ ] Pickup spawns / items
 - [ ] Visual readability in fights
 
@@ -76,11 +76,11 @@ The current build is focused on **core combat feel** and **arena flow**. Please 
 
 ## 🐛 Reporting Bugs / Suggesting Features
 
-Use the **[New Issue](https://github.com/tonywied17/bladewake-demo/issues/new/choose)** button — there are templates for:
+Use the **[New Issue](https://github.com/tonywied17/bladewake-demo/issues/new/choose)** button - there are templates for:
 
-- 🐛 **Bug Report** — crashes, broken mechanics, visual glitches
-- 💡 **Feature Request / Feedback** — design ideas, balance thoughts, polish notes
-- ⚡ **Performance Issue** — frame drops, hitches, GPU/CPU spikes
+- 🐛 **Bug Report** - crashes, broken mechanics, visual glitches
+- 💡 **Feature Request / Feedback** - design ideas, balance thoughts, polish notes
+- ⚡ **Performance Issue** - frame drops, hitches, GPU/CPU spikes
 
 Always include:
 - Build version (shown in main menu corner or `version.txt` in zip)
@@ -101,9 +101,9 @@ These builds are provided **for testing purposes only**. Do not redistribute, mi
 
 ## 🔗 Links
 
-- **Main project & source** — _(private during early access)_
-- **Discord / community** — coming soon
-- **Dev updates** — follow [@tonywied17](https://github.com/tonywied17)
+- **Main project & source** - _(private during early access)_
+- **Discord / community** - coming soon
+- **Dev updates** - follow [@tonywied17](https://github.com/tonywied17)
 
 ---
 
