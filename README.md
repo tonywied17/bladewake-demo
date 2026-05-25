@@ -7,9 +7,10 @@
 **Fast-paced, neon-soaked sword arena combat.**
 Public testing channel for pre-release Windows builds.
 
-[![Latest Release](https://img.shields.io/github/v/release/tonywied17/bladewake-demo?label=latest%20build&color=22d4f0)](https://github.com/tonywied17/bladewake-demo/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/tonywied17/bladewake-demo/total?color=d020e8)](https://github.com/tonywied17/bladewake-demo/releases)
-[![Report Issue](https://img.shields.io/badge/feedback-welcome-22d4f0)](https://github.com/tonywied17/bladewake-demo/issues/new/choose)
+[![Latest Build](https://img.shields.io/github/v/release/tonywied17/bladewake-demo?include_prereleases&label=latest%20build&color=22d4f0)](https://github.com/tonywied17/bladewake-demo/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/tonywied17/bladewake-demo/total?color=d020e8&label=downloads)](https://github.com/tonywied17/bladewake-demo/releases)
+[![Release Date](https://img.shields.io/github/release-date-pre/tonywied17/bladewake-demo?color=8b11a8&label=released)](https://github.com/tonywied17/bladewake-demo/releases/latest)
+[![Feedback](https://img.shields.io/badge/feedback-welcome-22d4f0)](https://github.com/tonywied17/bladewake-demo/issues/new/choose)
 
 </div>
 
