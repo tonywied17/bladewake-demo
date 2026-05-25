@@ -1,0 +1,79 @@
+name: ⚡ Performance Issue
+description: Frame drops, hitches, stutters, or unusual resource usage.
+labels: ["performance", "needs-triage"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Build version
+      placeholder: "v0.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: symptoms
+    attributes:
+      label: What did you experience?
+      placeholder: "FPS drops from 144 to 30 when more than 6 trail effects are on screen."
+    validations:
+      required: true
+
+  - type: input
+    id: resolution
+    attributes:
+      label: Resolution
+      placeholder: "1440p"
+    validations:
+      required: true
+
+  - type: input
+    id: fps_target
+    attributes:
+      label: Target FPS
+      placeholder: "144"
+
+  - type: input
+    id: fps_actual
+    attributes:
+      label: Actual FPS (during issue)
+      placeholder: "~30"
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: When does it happen?
+      placeholder: "Always when X / Sometimes when Y / Only on arena Z"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+    validations:
+      required: true
+
+  - type: input
+    id: cpu
+    attributes:
+      label: CPU
+    validations:
+      required: true
+
+  - type: input
+    id: ram
+    attributes:
+      label: RAM
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Driver version, background apps, MSI Afterburner overlays, etc.

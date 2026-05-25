@@ -1,0 +1,94 @@
+name: 🐛 Bug Report
+description: Something is broken, crashing, or behaving incorrectly.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. Please fill out the details below so we can reproduce and fix it quickly.
+
+  - type: input
+    id: version
+    attributes:
+      label: Build version
+      description: Shown on the main menu or in `version.txt` inside the zip.
+      placeholder: "v0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Crash / blocks play
+        - Broken mechanic / wrong behavior
+        - Visual glitch
+        - Minor / cosmetic
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly.
+      placeholder: "When I parry mid-dash, the player gets stuck in a T-pose..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start practice arena
+        2. Dash forward
+        3. Press parry during dash recovery
+        4. Observe T-pose
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: "Parry should either queue after dash recovery or be ignored."
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots / clips
+      description: Drag-and-drop images or short clips. GIFs welcome.
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      placeholder: "RTX 4070 / RX 7800 XT / Intel Arc A770"
+
+  - type: input
+    id: cpu
+    attributes:
+      label: CPU
+      placeholder: "Ryzen 7 5800X3D / i7-13700K"
+
+  - type: input
+    id: ram
+    attributes:
+      label: RAM
+      placeholder: "32GB"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Logs, anything else relevant.
