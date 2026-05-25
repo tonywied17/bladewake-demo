@@ -118,7 +118,7 @@ See [CHANGELOG.md](CHANGELOG.md) for details. Bug reports + feedback welcome via
         gh release create "v$Version" $zipPath `
             --title "Bladewake Early Access v$Version" `
             --notes-file $notesFile `
-            --prerelease
+            --latest
     } finally {
         Pop-Location
     }
