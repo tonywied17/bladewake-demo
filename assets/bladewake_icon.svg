@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#060a16"/>
+      <stop offset="0.5" stop-color="#0c1428"/>
+      <stop offset="1" stop-color="#0a0e1e"/>
+    </linearGradient>
+
+    <!-- Left sword blade (cyan) -->
+    <linearGradient id="bladeL" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#f0fdff"/>
+      <stop offset="0.3" stop-color="#7ef1ff"/>
+      <stop offset="0.7" stop-color="#22d4f0"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+
+    <!-- Right sword blade (magenta/pink) -->
+    <linearGradient id="bladeR" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#fff0fb"/>
+      <stop offset="0.3" stop-color="#f06fff"/>
+      <stop offset="0.7" stop-color="#d020e8"/>
+      <stop offset="1" stop-color="#8b11a8"/>
+    </linearGradient>
+
+    <!-- Cyan trail gradient -->
+    <linearGradient id="trailCyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00ffff" stop-opacity="0.0"/>
+      <stop offset="0.3" stop-color="#00ffff" stop-opacity="0.7"/>
+      <stop offset="0.7" stop-color="#22d4f0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0891b2" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Magenta trail gradient -->
+    <linearGradient id="trailMag" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff00ff" stop-opacity="0.0"/>
+      <stop offset="0.3" stop-color="#ff44ff" stop-opacity="0.7"/>
+      <stop offset="0.7" stop-color="#d020e8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#8b11a8" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Center clash glow -->
+    <radialGradient id="clashGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.15" stop-color="#d0ffff" stop-opacity="0.7"/>
+      <stop offset="0.4" stop-color="#66eeff" stop-opacity="0.35"/>
+      <stop offset="0.7" stop-color="#3388ff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#0044aa" stop-opacity="0.0"/>
+    </radialGradient>
+
+    <!-- Sparkle gradient -->
+    <radialGradient id="sparkle" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#aaeeff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#44aaff" stop-opacity="0.0"/>
+    </radialGradient>
+
+    <!-- Floor reflection -->
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00ddff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="bigGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="tinyGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="medGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- ========== BACKGROUND ========== -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines in background -->
+  <g opacity="0.06" stroke="#33aadd" stroke-width="0.8">
+    <line x1="80" y1="16" x2="80" y2="496"/>
+    <line x1="160" y1="16" x2="160" y2="496"/>
+    <line x1="256" y1="16" x2="256" y2="496"/>
+    <line x1="352" y1="16" x2="352" y2="496"/>
+    <line x1="432" y1="16" x2="432" y2="496"/>
+    <line x1="16" y1="96" x2="496" y2="96"/>
+    <line x1="16" y1="192" x2="496" y2="192"/>
+    <line x1="16" y1="288" x2="496" y2="288"/>
+    <line x1="16" y1="384" x2="496" y2="384"/>
+  </g>
+
+  <!-- Border glow -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#00ddff" stroke-opacity="0.35" stroke-width="5"/>
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#00ddff" stroke-opacity="0.08" stroke-width="16" filter="url(#bigGlow)"/>
+
+  <!-- ========== FLOOR REFLECTION ========== -->
+  <ellipse cx="256" cy="420" rx="180" ry="30" fill="url(#floorGrad)" opacity="0.5"/>
+
+  <!-- ========== TRAIL RIBBONS (behind swords) ========== -->
+  <!-- Cyan trail (left sword's wake) - sweeping arc -->
+  <g filter="url(#bigGlow)" opacity="0.55">
+    <path d="M60 400 C100 340, 140 260, 210 200 S280 170, 265 190" fill="none" stroke="#00eeff" stroke-width="22" stroke-linecap="round"/>
+  </g>
+  <path d="M60 400 C100 340, 140 260, 210 200 S280 170, 265 190" fill="none" stroke="url(#trailCyan)" stroke-width="14" stroke-linecap="round"/>
+  <!-- Cyan trail inner core -->
+  <path d="M70 395 C108 338, 142 262, 212 202 S275 175, 264 192" fill="none" stroke="#bbffff" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Magenta trail (right sword's wake) - sweeping arc -->
+  <g filter="url(#bigGlow)" opacity="0.55">
+    <path d="M452 400 C412 340, 372 260, 302 200 S232 170, 247 190" fill="none" stroke="#ee44ff" stroke-width="22" stroke-linecap="round"/>
+  </g>
+  <path d="M452 400 C412 340, 372 260, 302 200 S232 170, 247 190" fill="none" stroke="url(#trailMag)" stroke-width="14" stroke-linecap="round"/>
+  <!-- Magenta trail inner core -->
+  <path d="M442 395 C404 338, 370 262, 300 202 S237 175, 248 192" fill="none" stroke="#ffbbff" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Secondary trailing wisps -->
+  <path d="M80 420 C120 360, 160 290, 220 225" fill="none" stroke="#00ccdd" stroke-opacity="0.2" stroke-width="8" stroke-linecap="round" filter="url(#medGlow)"/>
+  <path d="M432 420 C392 360, 352 290, 292 225" fill="none" stroke="#cc33dd" stroke-opacity="0.2" stroke-width="8" stroke-linecap="round" filter="url(#medGlow)"/>
+
+  <!-- ========== LEFT SWORD (cyan, angled upper-right) ========== -->
+  <g transform="translate(256,240) rotate(-35) translate(-256,-240)">
+    <!-- Blade -->
+    <path d="M234 100 L256 78 L278 100 L268 290 L256 300 L244 290 Z" fill="url(#bladeL)"/>
+    <!-- Blade edge highlight -->
+    <path d="M248 110 L256 90 L256 280" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="2.5"/>
+    <!-- Fuller (groove) -->
+    <path d="M256 120 L256 260" fill="none" stroke="#0aa8c8" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round"/>
+    <!-- Cross-guard -->
+    <rect x="224" y="290" width="64" height="14" rx="4" fill="#0c1e36" stroke="#22d4f0" stroke-width="3.5" stroke-opacity="0.75"/>
+    <rect x="230" y="293" width="52" height="8" rx="3" fill="none" stroke="#66eeff" stroke-opacity="0.25" stroke-width="1.5"/>
+    <!-- Grip -->
+    <rect x="244" y="304" width="24" height="48" rx="5" fill="#0a1628"/>
+    <rect x="244" y="304" width="24" height="48" rx="5" fill="none" stroke="#1ac8e8" stroke-opacity="0.5" stroke-width="2.5"/>
+    <!-- Grip wrapping -->
+    <line x1="246" y1="314" x2="266" y2="310" stroke="#16a8c8" stroke-opacity="0.3" stroke-width="1.5"/>
+    <line x1="246" y1="326" x2="266" y2="322" stroke="#16a8c8" stroke-opacity="0.3" stroke-width="1.5"/>
+    <line x1="246" y1="338" x2="266" y2="334" stroke="#16a8c8" stroke-opacity="0.3" stroke-width="1.5"/>
+    <!-- Pommel -->
+    <ellipse cx="256" cy="358" rx="16" ry="10" fill="#0c1e36" stroke="#22d4f0" stroke-width="3" stroke-opacity="0.7"/>
+    <!-- Pommel gem -->
+    <circle cx="256" cy="358" r="5" fill="#00ffff" opacity="0.8"/>
+    <circle cx="256" cy="358" r="5" fill="#00ffff" opacity="0.3" filter="url(#tinyGlow)"/>
+    <!-- Blade glow aura -->
+    <path d="M234 100 L256 78 L278 100 L268 290 L256 300 L244 290 Z" fill="#00ddff" opacity="0.12" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- ========== RIGHT SWORD (magenta, angled upper-left) ========== -->
+  <g transform="translate(256,240) rotate(35) translate(-256,-240)">
+    <!-- Blade -->
+    <path d="M234 100 L256 78 L278 100 L268 290 L256 300 L244 290 Z" fill="url(#bladeR)"/>
+    <!-- Blade edge highlight -->
+    <path d="M264 110 L256 90 L256 280" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2.5"/>
+    <!-- Fuller -->
+    <path d="M256 120 L256 260" fill="none" stroke="#a818c8" stroke-opacity="0.35" stroke-width="4" stroke-linecap="round"/>
+    <!-- Cross-guard -->
+    <rect x="224" y="290" width="64" height="14" rx="4" fill="#1e0c36" stroke="#d020e8" stroke-width="3.5" stroke-opacity="0.75"/>
+    <rect x="230" y="293" width="52" height="8" rx="3" fill="none" stroke="#ee66ff" stroke-opacity="0.25" stroke-width="1.5"/>
+    <!-- Grip -->
+    <rect x="244" y="304" width="24" height="48" rx="5" fill="#160a28"/>
+    <rect x="244" y="304" width="24" height="48" rx="5" fill="none" stroke="#c818e8" stroke-opacity="0.5" stroke-width="2.5"/>
+    <!-- Grip wrapping -->
+    <line x1="246" y1="314" x2="266" y2="310" stroke="#a816c8" stroke-opacity="0.3" stroke-width="1.5"/>
+    <line x1="246" y1="326" x2="266" y2="322" stroke="#a816c8" stroke-opacity="0.3" stroke-width="1.5"/>
+    <line x1="246" y1="338" x2="266" y2="334" stroke="#a816c8" stroke-opacity="0.3" stroke-width="1.5"/>
+    <!-- Pommel -->
+    <ellipse cx="256" cy="358" rx="16" ry="10" fill="#1e0c36" stroke="#d020e8" stroke-width="3" stroke-opacity="0.7"/>
+    <!-- Pommel gem -->
+    <circle cx="256" cy="358" r="5" fill="#ff44ff" opacity="0.8"/>
+    <circle cx="256" cy="358" r="5" fill="#ff44ff" opacity="0.3" filter="url(#tinyGlow)"/>
+    <!-- Blade glow aura -->
+    <path d="M234 100 L256 78 L278 100 L268 290 L256 300 L244 290 Z" fill="#dd00ff" opacity="0.12" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- ========== CENTER CLASH (removed: white ball + lines for cleaner look) ========== -->
+
+  <!-- ========== FLOATING SPARKLE PARTICLES ========== -->
+  <g filter="url(#tinyGlow)">
+    <!-- Cyan sparkles -->
+    <circle cx="108" cy="320" r="4" fill="#00ffff" opacity="0.7"/>
+    <circle cx="142" cy="280" r="2.5" fill="#88ffff" opacity="0.5"/>
+    <circle cx="90" cy="260" r="3" fill="#44eeff" opacity="0.6"/>
+    <circle cx="170" cy="350" r="2" fill="#00ddff" opacity="0.4"/>
+    <circle cx="120" cy="195" r="3.5" fill="#66ffff" opacity="0.55"/>
+    <circle cx="75" cy="340" r="2" fill="#00ccee" opacity="0.35"/>
+
+    <!-- Magenta sparkles -->
+    <circle cx="404" cy="320" r="4" fill="#ff44ff" opacity="0.7"/>
+    <circle cx="370" cy="280" r="2.5" fill="#ff88ff" opacity="0.5"/>
+    <circle cx="422" cy="260" r="3" fill="#ee44ff" opacity="0.6"/>
+    <circle cx="342" cy="350" r="2" fill="#dd44ff" opacity="0.4"/>
+    <circle cx="392" cy="195" r="3.5" fill="#ff66ff" opacity="0.55"/>
+    <circle cx="437" cy="340" r="2" fill="#cc44ee" opacity="0.35"/>
+
+    <!-- White highlight sparkles near clash (removed with clash burst) -->
+  </g>
+
+  <!-- ========== "BLADEWAKE" TEXT ========== -->
+  <!-- Text shadow/glow -->
+  <text x="256" y="446" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="52" letter-spacing="8" fill="#00ddff" opacity="0.2" filter="url(#bigGlow)">BLADEWAKE</text>
+
+  <!-- Main text -->
+  <text x="256" y="446" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="52" letter-spacing="8" fill="none" stroke="url(#trailCyan)" stroke-width="1.5">BLADEWAKE</text>
+  <text x="256" y="446" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="52" letter-spacing="8" fill="white" opacity="0.92">BLADEWAKE</text>
+
+  <!-- Accent line under text -->
+  <line x1="130" y1="460" x2="382" y2="460" stroke="#00ddff" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round"/>
+  <line x1="160" y1="460" x2="352" y2="460" stroke="#00ddff" stroke-opacity="0.15" stroke-width="6" filter="url(#medGlow)"/>
+
+  <!-- Corner accent marks -->
+  <g stroke="#00ddff" stroke-opacity="0.4" stroke-width="2.5" stroke-linecap="round">
+    <!-- Top-left -->
+    <line x1="52" y1="80" x2="52" y2="52"/>
+    <line x1="52" y1="52" x2="80" y2="52"/>
+    <!-- Top-right -->
+    <line x1="460" y1="80" x2="460" y2="52"/>
+    <line x1="460" y1="52" x2="432" y2="52"/>
+    <!-- Bottom-left -->
+    <line x1="52" y1="432" x2="52" y2="460"/>
+    <line x1="52" y1="460" x2="80" y2="460"/>
+    <!-- Bottom-right -->
+    <line x1="460" y1="432" x2="460" y2="460"/>
+    <line x1="460" y1="460" x2="432" y2="460"/>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+name: 💡 Feature Request / Feedback
+description: Suggest a feature, balance change, or share design feedback.
+labels: ["feedback", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea, balance opinion, or polish note? Drop it here.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - Feature suggestion
+        - Balance feedback
+        - UX / polish
+        - Content idea (arena, weapon, mode)
+        - General feel / vibe
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What do you want to see, change, or discuss?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter?
+      description: What problem does it solve, or what does it improve?
+
+  - type: textarea
+    id: how
+    attributes:
+      label: How might it work?
+      description: Optional. Sketches, references, mechanics ideas.
+
+  - type: input
+    id: version
+    attributes:
+      label: Build version (if relevant)
+      placeholder: "v0.1.0"

@@ -1,0 +1,29 @@
+name: Validate Release Asset
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate uploaded build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check release has a build asset
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          tag="${{ github.event.release.tag_name }}"
+          echo "Validating release $tag"
+          assets=$(gh release view "$tag" --repo "${{ github.repository }}" --json assets --jq '.assets[].name')
+          echo "Assets found:"
+          echo "$assets"
+          if ! echo "$assets" | grep -qiE 'Bladewake.*win64.*\.zip$'; then
+            echo "::error::Release $tag is missing a Bladewake-*-win64.zip asset."
+            exit 1
+          fi
+          echo "Release asset OK."
