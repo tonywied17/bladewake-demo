@@ -28,7 +28,7 @@ Grab the latest zipped build from the **[Releases page](https://github.com/tonyw
 
 ## 🎮 What is Bladewake?
 
-A first-person / third-person arena fighter built in Godot 4.6, focused on:
+A **2.5D sidescrolling platform fighter** (think Smash-style — 3D characters, 2D plane of play) built in Godot 4.6, focused on:
 
 - **Trail-based blade combat** - every swing leaves a wake that reads as both flourish and threat range
 - **Skill-floor friendly, ceiling-deep** - light/heavy/parry/dash, no combo trees to memorize
@@ -50,12 +50,13 @@ The current build is focused on **core combat feel** and **arena flow**. Please 
 - [ ] Trail visuals at high refresh rates (144Hz+)
 
 ### Movement & Camera
-- [ ] Sprint -> slide -> attack transitions
+- [ ] Dash / jump / double-jump feel
+- [ ] Ledge / platform traversal
+- [ ] Camera framing on 1v1 vs free-for-all
 - [ ] Camera shake intensity
-- [ ] Lock-on (if available)
 
 ### Arenas
-- [ ] Each arena layout - sightlines, choke points, fall hazards
+- [ ] Each arena layout - platform spacing, ring-out zones, hazards
 - [ ] Pickup spawns / items
 - [ ] Visual readability in fights
 
