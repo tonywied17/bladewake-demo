@@ -7,10 +7,10 @@
 **Fast-paced, neon-soaked sword arena combat.**
 Public testing channel for pre-release Windows builds.
 
-[![Latest Build](https://img.shields.io/github/v/release/tonywied17/bladewake-demo?include_prereleases&label=latest%20build&color=22d4f0)](https://github.com/tonywied17/bladewake-demo/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/tonywied17/bladewake-demo/total?color=d020e8&label=downloads)](https://github.com/tonywied17/bladewake-demo/releases)
-[![Release Date](https://img.shields.io/github/release-date-pre/tonywied17/bladewake-demo?color=8b11a8&label=released)](https://github.com/tonywied17/bladewake-demo/releases/latest)
-[![Feedback](https://img.shields.io/badge/feedback-welcome-22d4f0)](https://github.com/tonywied17/bladewake-demo/issues/new/choose)
+<a href="https://github.com/tonywied17/bladewake-demo/releases/latest"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-build-dark.svg?v=fac5fb95"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-build-light.svg?v=fac5fb95" alt="latest build" /></picture></a>
+<a href="https://github.com/tonywied17/bladewake-demo/releases"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-downloads-dark.svg?v=90576405"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-downloads-light.svg?v=90576405" alt="downloads" /></picture></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-dark.svg?v=de93b105"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-light.svg?v=de93b105" alt="last commit" /></picture>
+<a href="https://github.com/tonywied17/bladewake-demo/issues/new/choose"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-feedback-dark.svg?v=2714f40a"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-feedback-light.svg?v=2714f40a" alt="feedback" /></picture></a>
 
 </div>
 
