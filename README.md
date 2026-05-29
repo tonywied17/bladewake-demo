@@ -7,10 +7,10 @@
 **Fast-paced, neon-soaked sword arena combat.**
 Public testing channel for pre-release Windows builds.
 
-<a href="https://github.com/tonywied17/bladewake-demo/releases/latest"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-build-dark.svg?v=fac5fb95"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-build-light.svg?v=fac5fb95" alt="latest build" /></picture></a>
-<a href="https://github.com/tonywied17/bladewake-demo/releases"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-downloads-dark.svg?v=90576405"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-downloads-light.svg?v=90576405" alt="downloads" /></picture></a>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-dark.svg?v=de93b105"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-light.svg?v=de93b105" alt="last commit" /></picture>
-<a href="https://github.com/tonywied17/bladewake-demo/issues/new/choose"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-feedback-dark.svg?v=2714f40a"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-feedback-light.svg?v=2714f40a" alt="feedback" /></picture></a>
+<a href="https://github.com/tonywied17/bladewake-demo/releases/latest"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-build-game.svg" alt="latest build" /></a>
+<a href="https://github.com/tonywied17/bladewake-demo/releases"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-downloads-game.svg" alt="downloads" /></a>
+<img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-game.svg" alt="last commit" />
+<a href="https://github.com/tonywied17/bladewake-demo/issues/new/choose"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-feedback-game.svg" alt="feedback" /></a>
 
 </div>
 
