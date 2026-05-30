@@ -9,7 +9,7 @@ Public testing channel for pre-release Windows builds.
 
 <a href="https://github.com/tonywied17/bladewake-demo/releases/latest"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-build-game.svg?v=9df0d38d" alt="latest build" /></a>
 <a href="https://github.com/tonywied17/bladewake-demo/releases"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-downloads-game.svg?v=87b23e06" alt="downloads" /></a>
-<img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-game.svg?v=989c2249" alt="last commit" />
+<img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-game.svg?v=cfd523b3" alt="last commit" />
 <a href="https://github.com/tonywied17/bladewake-demo/issues/new/choose"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-feedback-game.svg?v=6004679b" alt="feedback" /></a>
 
 </div>
