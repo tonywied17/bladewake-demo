@@ -7,10 +7,10 @@
 **Fast-paced, neon-soaked sword arena combat.**
 Public testing channel for pre-release Windows builds.
 
-<a href="https://github.com/tonywied17/bladewake-demo/releases/latest"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-build-game.svg?v=c9cf6b7f" alt="latest build" /></a>
-<a href="https://github.com/tonywied17/bladewake-demo/releases"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-downloads-game.svg?v=c22bd17d" alt="downloads" /></a>
-<img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-game.svg?v=2673a4c7" alt="last commit" />
-<a href="https://github.com/tonywied17/bladewake-demo/issues/new/choose"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-feedback-game.svg?v=75a3e32a" alt="feedback" /></a>
+<a href="https://github.com/tonywied17/bladewake-demo/releases/latest"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-build-game.svg?v=d8c8d639" alt="latest build" /></a>
+<a href="https://github.com/tonywied17/bladewake-demo/releases"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-downloads-game.svg?v=446b1741" alt="downloads" /></a>
+<img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-last-commit-game.svg?v=4d5b45fa" alt="last commit" />
+<a href="https://github.com/tonywied17/bladewake-demo/issues/new/choose"><img src="https://raw.githubusercontent.com/tonywied17/tonywied17/main/.github/badges/bladewake-feedback-game.svg?v=6a1f51c9" alt="feedback" /></a>
 
 </div>
 
